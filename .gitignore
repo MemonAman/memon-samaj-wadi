@@ -1,0 +1,58 @@
+# ============================================================
+# Memon Samaj Wadi – Root .gitignore
+# ============================================================
+
+# ─── Python / Django (backend) ───────────────────────────────
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/.env
+backend/staticfiles/
+backend/mediafiles/
+backend/media/
+backend/*.sqlite3
+backend/db.sqlite3
+backend/.pytest_cache/
+backend/htmlcov/
+backend/.coverage
+backend/receipts_pdfs/
+
+# ─── Node / React / Expo (admin + mobile) ────────────────────
+node_modules/
+admin/node_modules/
+mobile/node_modules/
+admin/dist/
+admin/.env
+admin/.env.local
+mobile/.env
+mobile/.env.local
+
+# Expo specific
+mobile/.expo/
+mobile/android/
+mobile/ios/
+mobile/dist/
+
+# ─── OS & Editor ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+
+# ─── Logs ────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ─── Sensitive / secrets ─────────────────────────────────────
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
