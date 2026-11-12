@@ -110,3 +110,4 @@ def record_audit(
     except Exception as exc:  # noqa: BLE001
         logger.error("AuditLog write failed: %s", exc)
         return None
+
